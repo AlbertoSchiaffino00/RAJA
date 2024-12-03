@@ -19,7 +19,7 @@
 
 #ifndef RAJA_Types_HPP
 #define RAJA_Types_HPP
-
+#ifndef __HERO_1
 #include "RAJA/config.hpp"
 
 #include <cstddef>
@@ -997,4 +997,21 @@ private:
 
 }  // namespace RAJA
 
+
+#else //__HERO_1
+
+// #include <cstddef>
+extern "C" {
+  #include <stddef.h>
+}
+
+namespace RAJA
+{
+
+using Index_type =int; // std::ptrdiff_t;
+
+}
+
+
+#endif //__HERO_1
 #endif  // closing endif for header file include guard

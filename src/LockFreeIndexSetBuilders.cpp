@@ -15,6 +15,7 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
@@ -331,3 +332,5 @@ void buildLockFreeColorIndexset(
 }
 
 }  // namespace RAJA
+
+#endif  //__HERO_1

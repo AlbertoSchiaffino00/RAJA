@@ -16,6 +16,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "RAJA/config.hpp"
 
 #if defined(RAJA_ENABLE_HIP)
@@ -62,3 +64,5 @@ std::unordered_map<hipStream_t, bool> g_stream_info_map;
 
 
 #endif  // if defined(RAJA_ENABLE_HIP)
+
+#endif //__HERO_1

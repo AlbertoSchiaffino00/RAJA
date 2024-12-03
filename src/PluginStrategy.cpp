@@ -4,6 +4,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1    
 
 #include "RAJA/util/PluginStrategy.hpp"
 
@@ -28,3 +29,5 @@ void PluginStrategy::finalize() { }
 
 }
 }
+
+#endif //__HERO_1

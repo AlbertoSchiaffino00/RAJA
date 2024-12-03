@@ -5,6 +5,8 @@
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
+#ifndef __HERO_1
+
 #include "RAJA/util/KokkosPluginLoader.hpp"
 
 #ifndef _WIN32
@@ -147,3 +149,5 @@ void linkKokkosPluginLoader() {}
 } // end namespace RAJA
 
 static RAJA::util::PluginRegistry::add<RAJA::util::KokkosPluginLoader> P("KokkosPluginLoader", "Dynamically load plugins ported from the Kokkos library.");
+
+#endif // __HERO_1

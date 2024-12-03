@@ -15,6 +15,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "RAJA/config.hpp"
 
@@ -74,3 +75,5 @@ cl::sycl::queue* getQueue() {
 
 
 #endif  // if defined(RAJA_ENABLE_SYCL)
+
+#endif //__HERO_1

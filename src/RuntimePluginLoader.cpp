@@ -4,6 +4,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "RAJA/util/RuntimePluginLoader.hpp"
 
@@ -146,3 +147,5 @@ void linkRuntimePluginLoader() {}
 } // end namespace RAJA
 
 static RAJA::util::PluginRegistry::add<RAJA::util::RuntimePluginLoader> P("RuntimePluginLoader", "Dynamically load RAJA plugins.");
+
+#endif //__HERO_1

@@ -15,6 +15,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "RAJA/config.hpp"
 
@@ -62,3 +63,5 @@ std::unordered_map<cudaStream_t, bool> g_stream_info_map;
 
 
 #endif  // if defined(RAJA_ENABLE_CUDA)
+
+#endif //__HERO_1

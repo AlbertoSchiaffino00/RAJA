@@ -14,7 +14,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-
+#ifndef __HERO_1
 #include <iostream>
 #include <string>
 
@@ -40,3 +40,5 @@ void DepGraphNode::print(std::ostream& os) const
 }
 
 }  // namespace RAJA
+
+#endif //__HERO_1

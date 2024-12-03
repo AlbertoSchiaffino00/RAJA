@@ -4,6 +4,7 @@
 //
 // SPDX-License-Identifier: (BSD-3-Clause)
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+#ifndef __HERO_1
 
 #include "RAJA/pattern/tensor/stats.hpp"
 #include <stdio.h>
@@ -131,3 +132,5 @@ void RAJA::tensor_stats::printVectorStats(){
   PRINT_STAT(num_matrix_mm_multacc_col_col);
 
 }
+
+#endif
